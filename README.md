@@ -176,6 +176,13 @@ evil-martians-login/
 ├── index.html          # Main HTML structure
 ├── styles.css          # Complete styling system
 ├── script.js           # Application logic and interactions
+├── assets/             # SVG icons and graphics
+│   ├── logo.svg        # Evil Martians logo
+│   ├── email-icon.svg  # Email input field icon
+│   ├── eye-open.svg    # Show password icon
+│   ├── eye-closed.svg  # Hide password icon
+│   ├── loading-spinner.svg # Loading animation
+│   └── close-icon.svg  # Modal close button
 ├── README.md           # This documentation
 └── .github/
     └── copilot-instructions.md  # Copilot customization
