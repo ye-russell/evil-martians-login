@@ -38,7 +38,7 @@ This project demonstrates:
 
 ## 🚀 Live Demo
 
-**[View Live Demo](https://yourusername.github.io/evil-martians-login)** *(Update with your GitHub Pages URL)*
+**[View Live Demo](https://ye-russell.github.io/evil-martians-login)**
 
 ## 🛠️ Technology Stack
 
@@ -46,34 +46,6 @@ This project demonstrates:
 - **CSS3**: Modern features including Grid, Flexbox, Custom Properties, and Animations
 - **JavaScript ES6+**: Classes, async/await, modules, and modern APIs
 - **No Frameworks**: Pure vanilla implementation for maximum performance
-
-## 🏃‍♂️ Quick Start
-
-### Option 1: GitHub Pages (Recommended)
-1. Fork this repository
-2. Go to Settings → Pages
-3. Select "Deploy from a branch" → "main"
-4. Visit your GitHub Pages URL
-
-### Option 2: Local Development
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/evil-martians-login.git
-cd evil-martians-login
-
-# Serve locally (choose one method):
-
-# Using Python
-python -m http.server 8000
-
-# Using Node.js (if you have it)
-npx serve .
-
-# Using PHP
-php -S localhost:8000
-
-# Then open http://localhost:8000
-```
 
 ## 🧪 Demo Accounts
 
@@ -260,6 +232,6 @@ For a production implementation, consider:
 
 ---
 
-**Built with ❤️ for Evil Martians by [Your Name]**
+**Built with ❤️ for Evil Martians by ye-russell**
 
 *This project showcases modern web development practices without framework dependencies, emphasizing performance, accessibility, and user experience.*
