@@ -144,6 +144,36 @@ body {
     color: #9ca3af;
 }
 
+/* SVG styling for external files */
+object[type="image/svg+xml"] {
+    pointer-events: none;
+}
+
+.input-icon object,
+.password-toggle object,
+.loading-spinner object,
+.modal-close object {
+    color: inherit;
+}
+
+/* Fallback for browsers that don't support SVG objects */
+.input-icon img,
+.password-toggle img,
+.loading-spinner img,
+.modal-close img {
+    filter: currentColor;
+}
+
+/* Ensure logo animation works with object element */
+.logo object {
+    transition: transform 0.2s ease;
+}
+
+.logo:hover object {
+    transform: rotate(10deg);
+}
+
+/* Input icon styling */
 .input-icon {
     position: absolute;
     right: 1rem;
