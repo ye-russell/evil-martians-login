@@ -3,130 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evil Martians - Sign In</title>
+    <title>A Special Gift for You ❤️</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
-        <header class="header">
-            <div class="logo">
-                <object data="assets/logo.svg" type="image/svg+xml" width="32" height="32" aria-label="Evil Martians logo">
-                    <img src="assets/logo.svg" alt="Evil Martians logo" width="32" height="32">
-                </object>
-                <span>Evil Martians</span>
-            </div>
-        </header>
+        <!-- Floating Hearts Background -->
+        <div class="floating-hearts">
+            <div class="heart heart-1">❤️</div>
+            <div class="heart heart-2">💖</div>
+            <div class="heart heart-3">💕</div>
+            <div class="heart heart-4">💗</div>
+            <div class="heart heart-5">❤️</div>
+            <div class="heart heart-6">💖</div>
+        </div>
 
-        <main class="main">
-            <div class="login-container">
-                <div class="login-card">
-                    <div class="login-header">
-                        <h1>Welcome back</h1>
-                        <p>Sign in to your account to continue</p>
+        <main class="main-content">
+            <div class="gift-container">
+                <div class="gift-card">
+                    <!-- Gift Header -->
+                    <div class="gift-header">
+                        <div class="sparkle-icon">✨</div>
+                        <h1 class="gift-title">
+                            For My <span class="beloved">Beloved</span> Partner
+                        </h1>
+                        <div class="sparkle-icon">✨</div>
                     </div>
 
-                    <form class="login-form" id="loginForm" novalidate>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email address</label>
-                            <div class="input-container">
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="form-input" 
-                                    placeholder="Enter your email"
-                                    autocomplete="email"
-                                    required
-                                    aria-describedby="email-error"
-                                >
-                                <div class="input-icon">
-                                    <object data="assets/email-icon.svg" type="image/svg+xml" width="20" height="20" aria-label="Email icon">
-                                        <img src="assets/email-icon.svg" alt="Email icon" width="20" height="20">
-                                    </object>
+                    <!-- Gift Content -->
+                    <div class="gift-content">
+                        <div class="love-message">
+                            <p class="message-text">
+                                I have something special for you, my love. 
+                                A little surprise that I hope will bring a smile to your face
+                                and make planning our future together even more beautiful.
+                            </p>
+                        </div>
+
+                        <!-- Gift Reveal -->
+                        <div class="gift-reveal">
+                            <div class="gift-box" id="giftBox">
+                                <div class="gift-lid">
+                                    <div class="bow">🎀</div>
                                 </div>
+                                <div class="gift-base">🎁</div>
+                                <div class="click-hint">Click me! 💝</div>
                             </div>
-                            <div class="error-message" id="email-error" role="alert" aria-live="polite"></div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="password" class="form-label">Password</label>
-                            <div class="input-container">
-                                <input 
-                                    type="password" 
-                                    id="password" 
-                                    name="password" 
-                                    class="form-input" 
-                                    placeholder="Enter your password"
-                                    autocomplete="current-password"
-                                    required
-                                    aria-describedby="password-error"
-                                >
-                                <button 
-                                    type="button" 
-                                    class="password-toggle" 
-                                    id="passwordToggle"
-                                    aria-label="Toggle password visibility"
-                                >
-                                    <object class="eye-open" data="assets/eye-open.svg" type="image/svg+xml" width="20" height="20" aria-label="Show password">
-                                        <img src="assets/eye-open.svg" alt="Show password" width="20" height="20">
-                                    </object>
-                                    <object class="eye-closed" data="assets/eye-closed.svg" type="image/svg+xml" width="20" height="20" aria-label="Hide password" style="display: none;">
-                                        <img src="assets/eye-closed.svg" alt="Hide password" width="20" height="20">
-                                    </object>
-                                </button>
+                        <!-- Surprise Content (Hidden initially) -->
+                        <div class="surprise-content" id="surpriseContent">
+                            <div class="surprise-message">
+                                <h2 class="surprise-title">Surprise! 🎉</h2>
+                                <p class="surprise-text">
+                                    I've prepared something to help us plan our dreams together.
+                                    A special tool where we can organize all our future plans,
+                                    adventures, and create beautiful memories.
+                                </p>
+
+                                <p>
+                                    Just use your email: EVVIBREVI@GMAIL.COM
+                                </p>
+                                
+                                <div class="gift-link-container">
+                                    <a href="https://remplanner.ru/client/" target="_blank" class="gift-link" id="giftLink">
+                                        <div class="link-content">
+                                            <div class="link-icon">🌟</div>
+                                            <div class="link-text">
+                                                <span class="link-title">RemPlanner</span>
+                                                <span class="link-subtitle">Our Planning Paradise</span>
+                                            </div>
+                                            <div class="link-arrow">→</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <p class="final-message">
+                                    With all my love, let's plan our beautiful future together! 💕
+                                </p>
                             </div>
-                            <div class="error-message" id="password-error" role="alert" aria-live="polite"></div>
                         </div>
+                    </div>
 
-                        <div class="form-options">
-                            <label class="checkbox-container">
-                                <input type="checkbox" id="remember" name="remember">
-                                <span class="checkmark"></span>
-                                Remember me
-                            </label>
-                            <a href="#" class="forgot-password">Forgot password?</a>
+                    <!-- Love Footer -->
+                    <div class="love-footer">
+                        <div class="hearts-row">
+                            <span class="pulse-heart">💖</span>
+                            <span class="pulse-heart">💗</span>
+                            <span class="pulse-heart">💕</span>
                         </div>
-
-                        <button type="submit" class="submit-button" id="submitButton">
-                            <span class="button-text">Sign in</span>
-                            <div class="loading-spinner" style="display: none;">
-                                <object data="assets/loading-spinner.svg" type="image/svg+xml" width="20" height="20" aria-label="Loading">
-                                    <img src="assets/loading-spinner.svg" alt="Loading" width="20" height="20">
-                                </object>
-                            </div>
-                        </button>
-                    </form>
-
-                    <div class="login-footer">
-                        <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+                        <p class="love-signature">
+                            Forever yours ❤️
+                        </p>
                     </div>
                 </div>
             </div>
         </main>
-
-        <!-- Success/Error Modal -->
-        <div class="modal-overlay" id="modalOverlay" style="display: none;">
-            <div class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
-                <div class="modal-header">
-                    <h2 id="modal-title"></h2>
-                    <button class="modal-close" id="modalClose" aria-label="Close modal">
-                        <object data="assets/close-icon.svg" type="image/svg+xml" width="24" height="24" aria-label="Close">
-                            <img src="assets/close-icon.svg" alt="Close" width="24" height="24">
-                        </object>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-icon" id="modalIcon"></div>
-                    <p id="modal-message"></p>
-                </div>
-                <div class="modal-footer">
-                    <button class="modal-button" id="modalButton">OK</button>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>
