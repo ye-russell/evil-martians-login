@@ -34,7 +34,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    background: url('assets/alty.jpg') right;
+    background: url('./assets/alty.jpg') right;
     color: var(--text-primary);
 }
 
